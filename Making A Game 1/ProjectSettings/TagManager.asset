@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Hazard
   - Player Shot
+  - Enemy
+  - Enemy Shot
   layers:
   - Default
   - TransparentFX

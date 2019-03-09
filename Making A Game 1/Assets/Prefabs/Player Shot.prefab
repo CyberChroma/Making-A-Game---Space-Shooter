@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1370888937162320470}
   - component: {fileID: 1370888937162320465}
   - component: {fileID: 5098055945377823154}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Player Shot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80b2f113d46ab0948800e89286c93311, type: 2}
+  - {fileID: 2100000, guid: 9e3696648afbb8c46a6a4e3251f6a23c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -146,7 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370888937722812563}
   - component: {fileID: 7065954428049287294}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Player Shot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

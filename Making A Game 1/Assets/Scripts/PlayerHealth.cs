@@ -27,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Hazard"))
+        if (other.CompareTag("Enemy") || other.CompareTag("Enemy Shot"))
         {
             playerObject.SetActive(false);
             playerMove.enabled = false;

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4755357903467983446}
   m_Layer: 0
   m_Name: Hazard
-  m_TagString: Hazard
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0f0b027e9e63b914d9821dff40d0c49f, type: 2}
+  - {fileID: 2100000, guid: f4d3d627542f32e47b6d3e7f8e8f1dfc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
