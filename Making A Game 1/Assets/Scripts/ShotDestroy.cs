@@ -9,6 +9,10 @@ public class ShotDestroy : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
+            if (other.GetComponent<EnemyScore>())
+            {
+                other.GetComponent<EnemyScore>().AddScore();
+            }
             Destroy(other.gameObject);
             Destroy(gameObject);
         }

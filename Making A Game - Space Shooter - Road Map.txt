@@ -1,0 +1,47 @@
+Making A Game - Space Shooter - Road Map
+
+1.  Introduction *
+2.  Making Player *
+3.  Player Shooting *
+4.  Hazards *
+5.  More Enemy Types *
+6.  Score System and UI *
+7.  Hazard and Shots Models *
+8.  Background
+9.  Player Ship Model
+10. Pause Menu
+11. Enemy Ship Models
+12. Different Level Modes (Turning Camera)
+13. Shield Power Up
+14. Gun Power Up
+15. Enemy Animations
+15. Player Animations
+15. Level Complete System
+16. Level Progress Bar
+17. Checkpoint Respawning
+18. Level Select
+19. Main Menu
+20. Jet Systems
+21. Music
+22. Explosions
+23. Sound Effects
+24. Planning Levels
+25. Creating Level 1
+26. Creating Level 2
+27. Creating Level 3
+28. Creating Level 4
+29. Creating Level 5
+30. Boss Movement
+31. Boss Attack Patterns
+32. Boss Health
+33. Boss Model
+34. Level Unlocking
+35. Level Saving
+36. Making Intro Cutscene
+37. Making End Cutscene
+38. Building Game
+39. Polish
+40. Polish 2
+41. Releasing Game
+42. Where to go next?
+
