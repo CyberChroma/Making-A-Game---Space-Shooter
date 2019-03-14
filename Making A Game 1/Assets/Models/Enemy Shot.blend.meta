@@ -16,7 +16,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Enemy_Shot
-    second: {fileID: 2100000, guid: 80b2f113d46ab0948800e89286c93311, type: 2}
+    second: {fileID: 2100000, guid: 0f0b027e9e63b914d9821dff40d0c49f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

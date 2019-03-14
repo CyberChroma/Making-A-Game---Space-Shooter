@@ -14,7 +14,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerObject = transform.Find("Player Object").gameObject;
+        playerObject = transform.Find("Player Ship").gameObject;
         playerMove = GetComponent<PlayerMove>();
         playerShoot = GetComponent<PlayerShoot>();
     }
@@ -32,6 +32,7 @@ public class PlayerHealth : MonoBehaviour
             playerObject.SetActive(false);
             playerMove.enabled = false;
             playerShoot.enabled = false;
+            GetComponent<BoxCollider>().enabled = false;
             Destroy(other.gameObject);
             StartCoroutine(WaitToRestart());
         }

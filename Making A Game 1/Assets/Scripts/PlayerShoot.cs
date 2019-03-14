@@ -8,11 +8,13 @@ public class PlayerShoot : MonoBehaviour
     public GameObject shot;
 
     private bool canShoot = true;
+    private Transform shotSpawn;
     private Transform shotParent;
 
     // Start is called before the first frame update
     void Start()
     {
+        shotSpawn = transform.Find("Shot Spawn");
         shotParent = GameObject.Find("Shots").transform;
     }
 
@@ -21,7 +23,7 @@ public class PlayerShoot : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && canShoot)
         {
-            Instantiate(shot, transform.position, transform.rotation, shotParent);
+            Instantiate(shot, shotSpawn.position, shotSpawn.rotation, shotParent);
             StartCoroutine(WaitToShoot());
         }
     }
