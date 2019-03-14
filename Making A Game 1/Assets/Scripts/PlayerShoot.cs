@@ -6,15 +6,16 @@ public class PlayerShoot : MonoBehaviour
 {
     public float shotTime;
     public GameObject shot;
+    public Transform[] shotSpawns;
+    public float tripleShotActiveTime;
 
     private bool canShoot = true;
-    private Transform shotSpawn;
     private Transform shotParent;
+    private bool tripleShot = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        shotSpawn = transform.Find("Shot Spawn");
         shotParent = GameObject.Find("Shots").transform;
     }
 
@@ -23,7 +24,16 @@ public class PlayerShoot : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && canShoot)
         {
-            Instantiate(shot, shotSpawn.position, shotSpawn.rotation, shotParent);
+            if (tripleShot)
+            {
+                Instantiate(shot, shotSpawns[0].position, shotSpawns[0].rotation, shotParent);
+                Instantiate(shot, shotSpawns[1].position, shotSpawns[1].rotation, shotParent);
+                Instantiate(shot, shotSpawns[2].position, shotSpawns[2].rotation, shotParent);
+            }
+            else
+            {
+                Instantiate(shot, shotSpawns[0].position, shotSpawns[0].rotation, shotParent);
+            }
             StartCoroutine(WaitToShoot());
         }
     }
@@ -33,5 +43,21 @@ public class PlayerShoot : MonoBehaviour
         canShoot = false;
         yield return new WaitForSeconds(shotTime);
         canShoot = true;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Gun Pickup"))
+        {
+            StartCoroutine(WaitToDeactivate());
+            Destroy(other.gameObject);
+        }
+    }
+
+    IEnumerator WaitToDeactivate()
+    {
+        tripleShot = true;
+        yield return new WaitForSeconds(tripleShotActiveTime);
+        tripleShot = false;
     }
 }

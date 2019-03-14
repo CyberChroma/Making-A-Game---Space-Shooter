@@ -6,11 +6,13 @@ public class PlayerMove : MonoBehaviour
 {
     public float speed;
 
+    private Transform mCam;
     private Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
+        mCam = GameObject.Find("Main Camera").transform;
         rb = GetComponent<Rigidbody>();
     }
 
@@ -32,7 +34,7 @@ public class PlayerMove : MonoBehaviour
         else if (Input.GetKey(KeyCode.S)) {
             v = -1;
         }
-        Vector3 moveVector = Vector3.right * h + Vector3.forward * v;
+        Vector3 moveVector = mCam.right * h + mCam.up * v;
         rb.AddForce(moveVector * speed);
     }
 }

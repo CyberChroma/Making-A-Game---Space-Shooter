@@ -7,6 +7,8 @@ TagManager:
   - Player Shot
   - Enemy
   - Enemy Shot
+  - Shield Pickup
+  - Gun Pickup
   layers:
   - Default
   - TransparentFX

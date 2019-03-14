@@ -11,11 +11,11 @@ Making A Game - Space Shooter - Road Map
 9.  Player Ship Model *
 10. Pause Menu *
 11. Enemy Ship Models *
-12. Shield Power Up
-13. Gun Power Up
-14. Different Level Modes (Turning Camera)
-15. Level Complete System
-16. Level Progress Bar
+12. Shield Power Up *
+13. Gun Power Up *
+14. Different Level Modes (Turning Camera) *
+15. Level Complete System *
+16. Level Progress Bar and Score Bar
 17. Level Select
 18. Main Menu
 19. Explosions
@@ -27,7 +27,7 @@ Making A Game - Space Shooter - Road Map
 25. Creating Levels 2 and 3
 26. Level Unlocking
 27. Level Saving
-28. Building Game
+28. Building Game Demo
 29. Enemy Random Spawning
 30. Level Creation System
 31. Making more levels

@@ -13,7 +13,6 @@ public class ShotDestroy : MonoBehaviour
             {
                 other.GetComponent<EnemyScore>().AddScore();
             }
-            Destroy(other.gameObject);
             Destroy(gameObject);
         }
     }

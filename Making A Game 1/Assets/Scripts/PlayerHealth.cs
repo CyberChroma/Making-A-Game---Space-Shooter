@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     private GameObject playerObject;
     private PlayerMove playerMove;
     private PlayerShoot playerShoot;
+    private GameObject shield;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,8 @@ public class PlayerHealth : MonoBehaviour
         playerObject = transform.Find("Player Ship").gameObject;
         playerMove = GetComponent<PlayerMove>();
         playerShoot = GetComponent<PlayerShoot>();
+        shield = transform.Find("Shield").gameObject;
+        shield.SetActive(false);
     }
 
     // Update is called once per frame
@@ -29,12 +32,24 @@ public class PlayerHealth : MonoBehaviour
     {
         if (other.CompareTag("Enemy") || other.CompareTag("Enemy Shot"))
         {
-            playerObject.SetActive(false);
-            playerMove.enabled = false;
-            playerShoot.enabled = false;
-            GetComponent<BoxCollider>().enabled = false;
+            if (shield.activeInHierarchy)
+            {
+                shield.SetActive(false);
+                Destroy(other.gameObject);
+            }
+            else
+            {
+                playerObject.SetActive(false);
+                playerMove.enabled = false;
+                playerShoot.enabled = false;
+                GetComponent<BoxCollider>().enabled = false;
+                Destroy(other.gameObject);
+                StartCoroutine(WaitToRestart());
+            }
+        } else if (other.CompareTag("Shield Pickup"))
+        {
+            shield.SetActive(true);
             Destroy(other.gameObject);
-            StartCoroutine(WaitToRestart());
         }
     }
 

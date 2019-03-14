@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8064657237745684060}
   - component: {fileID: 1746040772594330034}
   - component: {fileID: 6394559534444713017}
+  - component: {fileID: 5986740096969279334}
   m_Layer: 0
   m_Name: Enemy-Turn And Shoot
   m_TagString: Enemy
@@ -78,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f9860cec589ef4e93d9a7bf408b8ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 20
 --- !u!114 &8064657237745684060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,8 +92,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 584ef733208cd91439aed8bc3cd030b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftMove: 50
-  rightMove: 50
+  leftMove: 60
+  rightMove: 60
   smoothing: 2
 --- !u!114 &1746040772594330034
 MonoBehaviour:
@@ -106,8 +107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62389e8b485983e458fd915b55095c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotTime: 2
-  variance: 0.25
+  shotTime: 4
+  variance: 0.5
   shot: {fileID: 1370888937722812564, guid: 46cc8136df7b9fe46b5653abc393a5da, type: 3}
 --- !u!114 &6394559534444713017
 MonoBehaviour:
@@ -122,6 +123,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 40
+--- !u!114 &5986740096969279334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409654168846740060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92672173a2cb2fe4593e0fc90534eda5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5016677928161511224
 PrefabInstance:
   m_ObjectHideFlags: 0

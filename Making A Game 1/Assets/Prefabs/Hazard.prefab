@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4755357903467983445}
   - component: {fileID: 4755357903467983446}
   - component: {fileID: 521902988681104520}
+  - component: {fileID: 1152271624510863524}
   m_Layer: 0
   m_Name: Hazard
   m_TagString: Enemy
@@ -76,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f9860cec589ef4e93d9a7bf408b8ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 20
 --- !u!114 &521902988681104520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +91,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 10
+--- !u!114 &1152271624510863524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755357903467983443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92672173a2cb2fe4593e0fc90534eda5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1421060491372068156
 MonoBehaviour:
   m_ObjectHideFlags: 0

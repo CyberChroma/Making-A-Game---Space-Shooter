@@ -8,6 +8,7 @@ public class EnemyTurn : MonoBehaviour
     public float leftMove;
     public float rightMove;
     public float smoothing;
+    public bool startRight = true;
 
     private Rigidbody rb;
     private float dirMultiplier = 1;
@@ -17,6 +18,7 @@ public class EnemyTurn : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        dir = startRight;
     }
 
     // Update is called once per frame

@@ -11,7 +11,7 @@ public class EnemyScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scoreUI = GameObject.Find("Score Text").GetComponent<ScoreUI>();
+        scoreUI = FindObjectOfType<ScoreUI>();
     }
 
     public void AddScore ()
