@@ -15,7 +15,7 @@ Making A Game - Space Shooter - Road Map
 13. Gun Power Up *
 14. Different Level Modes (Turning Camera) *
 15. Level Complete System *
-16. Level Progress Bar and Score Bar
+16. Level Progress Bar and Score Bar *
 17. Level Select
 18. Main Menu
 19. Explosions

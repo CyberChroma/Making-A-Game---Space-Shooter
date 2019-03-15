@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public float respawnTime;
+    public bool active = true;
 
     private GameObject playerObject;
     private PlayerMove playerMove;
@@ -37,7 +38,7 @@ public class PlayerHealth : MonoBehaviour
                 shield.SetActive(false);
                 Destroy(other.gameObject);
             }
-            else
+            else if (active)
             {
                 playerObject.SetActive(false);
                 playerMove.enabled = false;

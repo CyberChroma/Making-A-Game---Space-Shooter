@@ -19,6 +19,9 @@ public class EnemyTurn : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         dir = startRight;
+        if (!dir) {
+            dirMultiplier = -1;
+        }
     }
 
     // Update is called once per frame

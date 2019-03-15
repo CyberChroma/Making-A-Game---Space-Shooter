@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public Text endScoreText;
 
     private ScoreUI scoreUI;
+    private LevelProgressUI levelProgressUI;
     private int score = 0;
     private PauseManager pauseManager;
     private PlayerMove playerMove;
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
         playerMove = FindObjectOfType<PlayerMove>();
         playerShoot = FindObjectOfType<PlayerShoot>();
         scoreUI = FindObjectOfType<ScoreUI>();
+        levelProgressUI = FindObjectOfType<LevelProgressUI>();
         levelCompleteScreen.SetActive(false);
         levelFailedScreen.SetActive(false);
         endScoreText.gameObject.SetActive(false);
@@ -44,6 +46,7 @@ public class GameManager : MonoBehaviour
         endScoreText.text = "Score: " + score + " / " + requiredScore;
         endScoreText.gameObject.SetActive(true);
         scoreUI.gameObject.SetActive(false);
+        levelProgressUI.gameObject.SetActive(false);
         if (score >= requiredScore)
         {
             levelCompleteScreen.SetActive(true);
