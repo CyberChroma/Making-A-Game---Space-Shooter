@@ -16,30 +16,30 @@ Making A Game - Space Shooter - Road Map
 14. Different Level Modes (Turning Camera) *
 15. Level Complete System *
 16. Level Progress Bar and Score Bar *
-17. Level Select
-18. Main Menu
-19. Explosions
-20. Music
-21. Jet Systems
-22. Sound Effects
-23. Planning Levels
-24. Creating Level 1
-25. Creating Levels 2 and 3
-26. Level Unlocking
-27. Level Saving
-28. Building Game Demo
-29. Enemy Random Spawning
-30. Level Creation System
-31. Making more levels
-32. Boss Planning
-33. Boss Movement
-34. Boss Attack Patterns
-35. Boss Health
-36. Boss Model
-37. Making Intro Cutscene
-38. Making Boss Intro Cutscene
-39. Making End Cutscene
-40. Polish
+17. Level Select and Main Menu *
+18. Explosions and Jet Systems
+19. Music and Sound Effects
+20. UI Improvements
+21. Planning Levels
+22. Creating Levels 1, 2, and 3
+23. Level Unlocking
+24. Level Saving
+25. Menu UI Improvements
+26. Building Game Demo
+27. Enemy Random Spawning
+28. Level Creation System
+29. Making more levels
+30. Boss Planning
+31. Boss Movement
+32. Boss Attack Patterns
+33. Boss Health
+34. Boss Model
+35. Boss Animations
+36. Making Intro Cutscene
+37. Making Boss Intro Cutscene
+38. Making End Cutscene
+39. Polish
+40. Polish 2
 41. Releasing Game
 42. Where to go next?
 
