@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour
 
     public void GoToLevel (int level)
     {
+        Destroy(FindObjectOfType<MusicManager>().gameObject);
         SceneManager.LoadScene("Level " + level);
     }
 

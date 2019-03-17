@@ -48,6 +48,7 @@ public class PauseManager : MonoBehaviour
     public void GoToScene(string scene)
     {
         Time.timeScale = 1;
+        Destroy(FindObjectOfType<MusicManager>().gameObject);
         SceneManager.LoadScene(scene);
     }
 }

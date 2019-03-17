@@ -7,11 +7,13 @@ public class PlayerHealth : MonoBehaviour
 {
     public float respawnTime;
     public bool active = true;
+    public GameObject playerExplosion;
 
     private GameObject playerObject;
     private PlayerMove playerMove;
     private PlayerShoot playerShoot;
     private GameObject shield;
+    private Transform explosionsParent;
 
     // Start is called before the first frame update
     void Start()
@@ -21,12 +23,7 @@ public class PlayerHealth : MonoBehaviour
         playerShoot = GetComponent<PlayerShoot>();
         shield = transform.Find("Shield").gameObject;
         shield.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        explosionsParent = GameObject.Find("Particle Systems").transform;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -36,7 +33,6 @@ public class PlayerHealth : MonoBehaviour
             if (shield.activeInHierarchy)
             {
                 shield.SetActive(false);
-                Destroy(other.gameObject);
             }
             else if (active)
             {
@@ -44,7 +40,7 @@ public class PlayerHealth : MonoBehaviour
                 playerMove.enabled = false;
                 playerShoot.enabled = false;
                 GetComponent<BoxCollider>().enabled = false;
-                Destroy(other.gameObject);
+                Instantiate(playerExplosion, transform.position, transform.rotation, explosionsParent);
                 StartCoroutine(WaitToRestart());
             }
         } else if (other.CompareTag("Shield Pickup"))
@@ -56,6 +52,7 @@ public class PlayerHealth : MonoBehaviour
 
     IEnumerator WaitToRestart ()
     {
+        FindObjectOfType<GameManager>().isFading = false;
         yield return new WaitForSeconds(respawnTime);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

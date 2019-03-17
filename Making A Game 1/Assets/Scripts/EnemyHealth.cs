@@ -5,12 +5,17 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
 
+    public GameObject enemyExplosion;
+
+    private Transform explosionsParent;
     private EnemyManager enemyManager;
 
     // Start is called before the first frame update
     void Start()
     {
         enemyManager = FindObjectOfType<EnemyManager>();
+        explosionsParent = GameObject.Find("Particle Systems").transform;
+
     }
 
     // Update is called once per frame
@@ -24,6 +29,10 @@ public class EnemyHealth : MonoBehaviour
         if (other.CompareTag("Player Shot"))
         {
             enemyManager.EnemyDestroyed(transform);
+            if (enemyExplosion != null)
+            {
+                Instantiate(enemyExplosion, transform.position, transform.rotation, explosionsParent);
+            }
             Destroy(gameObject);
         }
     }
