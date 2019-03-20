@@ -21,7 +21,7 @@ Making A Game - Space Shooter - Road Map
 19. Jet Systems and Music *
 20. Sound Effects *
 21. UI Improvements *
-22. Creating Levels 1, 2, and 3
+22. Creating Levels 1, 2, and 3 *
 23. Level Unlocking
 24. Level Saving
 25. Building Game Demo
