@@ -70,8 +70,6 @@ public class GameManager : MonoBehaviour
                 saveManager.Save();
             }
             levelCompleteScreen.SetActive(true);
-
-
         } else
         {
             levelFailedScreen.SetActive(true);
