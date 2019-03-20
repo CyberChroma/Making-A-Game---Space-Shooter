@@ -22,8 +22,8 @@ Making A Game - Space Shooter - Road Map
 20. Sound Effects *
 21. UI Improvements *
 22. Creating Levels 1, 2, and 3 *
-23. Level Unlocking
-24. Level Saving
+23. Level Unlocking *
+24. Game Saving *
 25. Building Game Demo
 26. Enemy Random Spawning
 27. Level Creation System
