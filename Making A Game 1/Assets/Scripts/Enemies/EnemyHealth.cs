@@ -8,12 +8,12 @@ public class EnemyHealth : MonoBehaviour
     public GameObject enemyExplosion;
 
     private Transform explosionsParent;
-    private EnemyManager enemyManager;
+    private PickupManager pickupManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        enemyManager = FindObjectOfType<EnemyManager>();
+        pickupManager = FindObjectOfType<PickupManager>();
         explosionsParent = GameObject.Find("Particle Systems").transform;
 
     }
@@ -28,7 +28,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (other.CompareTag("Player Shot"))
         {
-            enemyManager.EnemyDestroyed(transform);
+            pickupManager.EnemyDestroyed(transform);
             if (enemyExplosion != null)
             {
                 Instantiate(enemyExplosion, transform.position, transform.rotation, explosionsParent);

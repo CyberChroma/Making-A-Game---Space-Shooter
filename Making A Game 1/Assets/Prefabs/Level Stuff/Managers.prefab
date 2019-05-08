@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 69112651}
   - component: {fileID: 69112652}
   m_Layer: 0
-  m_Name: Enemy Manager
+  m_Name: Pickup Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,9 +93,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredScore: 300
+  fadeInSmoothing: 0
+  fadeOutSmoothing: 0
   levelCompleteScreen: {fileID: 0}
   levelFailedScreen: {fileID: 0}
-  scoreText: {fileID: 0}
+  endScoreText: {fileID: 0}
+  isFading: 1
 --- !u!1 &9110968083749146833
 GameObject:
   m_ObjectHideFlags: 0

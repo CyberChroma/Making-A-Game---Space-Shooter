@@ -21,17 +21,17 @@ public class PlayerMove : MonoBehaviour
     {
         int h = 0;
         int v = 0;
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.D))
         {
             h = -1;
-        } else if (Input.GetKey(KeyCode.D)) {
+        } else if (Input.GetKey(KeyCode.G)) {
             h = 1;
         }
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.R))
         {
             v = 1;
         }
-        else if (Input.GetKey(KeyCode.S)) {
+        else if (Input.GetKey(KeyCode.F)) {
             v = -1;
         }
         Vector3 moveVector = mCam.right * h + mCam.up * v;

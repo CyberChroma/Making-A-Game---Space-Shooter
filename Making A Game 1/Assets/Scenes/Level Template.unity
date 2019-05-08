@@ -2243,15 +2243,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6202555732911284777, guid: b1cccb5cb013b0a49817c67d78f4b7a9,
-        type: 3}
-      propertyPath: yRot
-      value: 45
-      objectReference: {fileID: 0}
     - target: {fileID: 6202555732911284759, guid: b1cccb5cb013b0a49817c67d78f4b7a9,
         type: 3}
       propertyPath: m_Drag
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202555732911284777, guid: b1cccb5cb013b0a49817c67d78f4b7a9,
+        type: 3}
+      propertyPath: yRot
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1cccb5cb013b0a49817c67d78f4b7a9, type: 3}
@@ -13643,15 +13643,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6202555732911284777, guid: b1cccb5cb013b0a49817c67d78f4b7a9,
-        type: 3}
-      propertyPath: yRot
-      value: -90
-      objectReference: {fileID: 0}
     - target: {fileID: 6202555732911284759, guid: b1cccb5cb013b0a49817c67d78f4b7a9,
         type: 3}
       propertyPath: m_Drag
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202555732911284777, guid: b1cccb5cb013b0a49817c67d78f4b7a9,
+        type: 3}
+      propertyPath: yRot
+      value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1cccb5cb013b0a49817c67d78f4b7a9, type: 3}
@@ -15205,15 +15205,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6202555732911284777, guid: b1cccb5cb013b0a49817c67d78f4b7a9,
-        type: 3}
-      propertyPath: yRot
-      value: 180
-      objectReference: {fileID: 0}
     - target: {fileID: 6202555732911284759, guid: b1cccb5cb013b0a49817c67d78f4b7a9,
         type: 3}
       propertyPath: m_Drag
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202555732911284777, guid: b1cccb5cb013b0a49817c67d78f4b7a9,
+        type: 3}
+      propertyPath: yRot
+      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1cccb5cb013b0a49817c67d78f4b7a9, type: 3}
