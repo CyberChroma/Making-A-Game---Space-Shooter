@@ -20,12 +20,6 @@ public class PickupManager : MonoBehaviour
         shotsParent = GameObject.Find("Shots").transform;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void EnemyDestroyed (Transform enemyTransform)
     {
         pickupEnemiesLeft--;
@@ -33,10 +27,17 @@ public class PickupManager : MonoBehaviour
         {
             if (Random.Range(0, 2) == 0)
             {
-                Instantiate(shieldPickup, enemyTransform.position, enemyTransform.rotation, shotsParent);
-            } else
+                if (shieldPickup)
+                {
+                    Instantiate(shieldPickup, enemyTransform.position, enemyTransform.rotation, shotsParent);
+                }
+            }
+            else
             {
-                Instantiate(gunPickup, enemyTransform.position, enemyTransform.rotation, shotsParent);
+                if (gunPickup)
+                {
+                    Instantiate(gunPickup, enemyTransform.position, enemyTransform.rotation, shotsParent);
+                }
             }
             pickupEnemiesLeft = Random.Range(pickupEnemiesMin, pickupEnemiesMax + 1);
         }

@@ -15102,35 +15102,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - rotation: 0
-    disToNext: 15
-    xMin: 5
-    xMax: 10
-    yMin: 5
-    yMax: 10
-    numEnemy1: 10
+  - rotation: 6
+    disToNext: 5
+    xMin: 1
+    xMax: 2
+    yMin: 1
+    yMax: 2
+    numEnemy1: 15
     numEnemy2: 10
     numEnemy3: 10
-    numEnemy4: 10
-  - rotation: 6
-    disToNext: 10
-    xMin: 2
-    xMax: 4
+    numEnemy4: 5
+  - rotation: 0
+    disToNext: 5
+    xMin: 1
+    xMax: 2
     yMin: 1
-    yMax: 3
-    numEnemy1: 0
+    yMax: 2
+    numEnemy1: 15
     numEnemy2: 10
-    numEnemy3: 0
-    numEnemy4: 10
+    numEnemy3: 10
+    numEnemy4: 5
   - rotation: 3
-    disToNext: 15
-    xMin: 2
-    xMax: 4
+    disToNext: 5
+    xMin: 1
+    xMax: 2
     yMin: 1
-    yMax: 3
-    numEnemy1: 5
-    numEnemy2: 5
-    numEnemy3: 5
+    yMax: 2
+    numEnemy1: 15
+    numEnemy2: 10
+    numEnemy3: 10
     numEnemy4: 5
   enemies: {fileID: 2099317043}
   turnPoints: {fileID: 1561357830}

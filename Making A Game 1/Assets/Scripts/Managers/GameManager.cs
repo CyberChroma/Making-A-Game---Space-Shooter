@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public int requiredScore = 500;
     public float fadeInSmoothing;
     public float fadeOutSmoothing;
     public GameObject levelCompleteScreen;
@@ -58,11 +57,11 @@ public class GameManager : MonoBehaviour
         playerShoot.enabled = false;
         pauseManager.enabled = false;
         score = scoreUI.score;
-        endScoreText.text = "Score: " + score + " / " + requiredScore;
+        endScoreText.text = "Score: " + score + " / " + scoreUI.requiredScore;
         endScoreText.gameObject.SetActive(true);
         scoreUI.gameObject.SetActive(false);
         levelProgressUI.gameObject.SetActive(false);
-        if (score >= requiredScore)
+        if (score >= scoreUI.requiredScore)
         {
             if (saveManager.unlockedLevel < saveManager.level + 1)
             {
@@ -85,5 +84,11 @@ public class GameManager : MonoBehaviour
     {
         Destroy(FindObjectOfType<MusicManager>().gameObject);
         SceneManager.LoadScene("Level Select");
+    }
+
+    public void LastLevel()
+    {
+        Destroy(FindObjectOfType<MusicManager>().gameObject);
+        SceneManager.LoadScene("End");
     }
 }

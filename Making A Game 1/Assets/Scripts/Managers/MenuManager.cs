@@ -14,12 +14,6 @@ public class MenuManager : MonoBehaviour
         saveManager = FindObjectOfType<SaveManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void NewGame ()
     {
         saveManager.New();

@@ -35,8 +35,8 @@ public class LevelCreator : MonoBehaviour
     private int enemyTypesLeft = 0;
     private float xRadius = 10;
     private float spawnPosX = 0;
-    private float spawnPosZ = 20;
-    private float zRowPos = 20;
+    private float spawnPosZ = 15;
+    private float zRowPos = 15;
 
     private int whileCounter = 0;
 
@@ -58,7 +58,7 @@ public class LevelCreator : MonoBehaviour
             {
                 xRadius = 4;
             }
-            spawnPosX = -xRadius - waves[i].xMin;
+            spawnPosX = -xRadius;
             enemiesLeft[0] = waves[i].numEnemy1;
             enemiesLeft[1] = waves[i].numEnemy2;
             enemiesLeft[2] = waves[i].numEnemy3;
@@ -70,7 +70,7 @@ public class LevelCreator : MonoBehaviour
                 spawnPosX += Random.Range(waves[i].xMin, waves[i].xMax);
                 if (spawnPosX > xRadius)
                 {
-                    spawnPosX = -xRadius - waves[i].xMin;
+                    spawnPosX = -xRadius;
                     zRowPos += 2 * waves[i].yMin;
                 }
                 spawnPosZ = zRowPos + (Random.Range(waves[i].yMin, waves[i].yMax) * (Random.Range(0, 2)*2-1));
